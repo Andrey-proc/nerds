@@ -47,19 +47,26 @@ li{
 
 .main-navigation ul {
   font-weight: bold;
- margin-top: 30px; 
+  margin-top: 30px; 
 }
 
 .main-navigation li {
   display: inline-block;
-  padding: 0 24px;
   text-transform: uppercase;
+  padding: 0 24px;
 }
+
 .main-header-logo {
   display: inline-block;
   width: 160px;
   height: 65px;
-  background: url(../img/logo.svg) no-repeat;
+  background: url(../img/nerds-logo1.png) no-repeat;
+}
+.main-header-logo:hover {
+  background: url(../img/nerds-logo2.png) no-repeat;
+}
+.main-header-logo:active {
+  background: url(../img/nerds-logo3.png) no-repeat;
 }
 
 .main-navigation a {
@@ -68,9 +75,13 @@ li{
 .main-navigation a:hover {
   color: #fb565a;
 }
-.main-navigation a:active {
+
+.site-navigation a:active, 
+.cart-navigation a:active {
   color: #a6a6a6;
 }
+
+  
 
 
 
@@ -184,12 +195,13 @@ li{
 
 
  .presentation {
-   width: 1160px;
+   width: 1200px;
    margin: 0 auto;
+   padding: 0 20px;
    padding-top: 45px ;
    display: flex;
    margin-top: 60px;
-   border-top: 3px solid #eeeeee;
+   box-shadow: 0 -22px 0 -20px  #eeeeee;
  }
  .presentation h2 {
    font-size: 40px;
@@ -203,7 +215,7 @@ li{
  }
  .servece_list {
    padding-left: 38px;
-   line-height: 45px ;
+   line-height: 50px ;
  }
  .servece_list li{
   position: relative;
@@ -211,7 +223,7 @@ li{
  .servece_list li::after{
   position: absolute;
   content: "";
-  top: 22px;
+  top: 25px;
   left: -35px;
   background-color: #fb565a;
   width: 25px;
@@ -244,3 +256,135 @@ li{
  .statistics-list li:nth-child(3) sup {
   left: 45px;
  }
+
+ /* бренды */
+
+ .main-brands {
+   width: 1200px;
+   margin: 0 auto;
+  
+ }
+ .list_brands {
+   display: flex;
+   justify-content: space-between;
+   padding: 45px 0;
+   margin: 80px 0;
+   box-shadow: 
+   0 -22px 0 -20px  #eeeeee,
+   0 22px 0 -20px  #eeeeee;
+ }
+ .list_brands li {
+   flex-grow: 1;
+   margin: auto;
+ }
+ .list_brands a {
+   display: block;
+   margin: auto;
+ }
+
+ /*1*/
+
+.logo_ha {
+  background-image: url(../img/logo-1.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 70px;
+}
+.logo_ha:hover {
+  background-image: url(../img/logo-11.png);
+  background-repeat: no-repeat;
+}
+.logo_ha:active {
+  background-image: url(../img/logo-111.png);
+  background-repeat: no-repeat;
+}
+
+ /*2*/
+
+.logo_bs {
+  background-image: url(../img/logo-2.png);
+  background-repeat: no-repeat;
+  width: 210px;
+  height: 90px;
+}
+.logo_bs:hover {
+  background-image: url(../img/logo-22.png);
+  background-repeat: no-repeat;
+}
+.logo_bs:active {
+  background-image: url(../img/logo-222.png);
+  background-repeat: no-repeat;
+}
+
+ /*3*/
+
+.logo_pi {
+  background-image: url(../img/logo-3.png);
+  background-repeat: no-repeat;
+  width: 188px;
+  height: 55px;
+}
+.logo_pi:hover {
+  background-image: url(../img/logo-33.png);
+  background-repeat: no-repeat;
+}
+.logo_pi:active {
+  background-image: url(../img/logo-333.png);
+  background-repeat: no-repeat;
+}
+
+ /*4*/
+
+.logo_mi {
+  background-image: url(../img/logo-4.png);
+  background-repeat: no-repeat;
+  width: 175px;
+  height: 85px;
+}
+.logo_mi:hover {
+  background-image: url(../img/logo-44.png);
+  background-repeat: no-repeat;
+}
+.logo_mi:active {
+  background-image: url(../img/logo-444.png);
+  background-repeat: no-repeat;
+}
+
+.map-container {
+  width: 1440px;
+  height: 416px;
+  margin: 0 auto;
+  background-image: url(../img/index-map.jpg) ;
+}
+
+/* Карта */
+
+.map-main {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 53px 20px;
+  background-image: url(../img/map-marker.png);
+  background-repeat: no-repeat;
+  background-position: 67.7% 39.5%;
+}
+.window {
+  background-color: white;
+  padding: 40px 50px 0px 50px;
+  width: 320px;
+  height: 310px;
+}
+.window h4 {
+  text-transform: uppercase;
+}
+.window p {
+  margin-top: 20px;
+}
+.window a {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  margin-top: 20px;
+  border-radius: 3px;
+  color: white;
+  padding: 15px 43px 15px 43px;
+}
