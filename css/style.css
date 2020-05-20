@@ -25,7 +25,6 @@ li{
 
 
 
-
 /* Шапка */
 
 
@@ -47,7 +46,10 @@ li{
 
 .main-navigation ul {
   font-weight: bold;
-  margin-top: 30px; 
+  margin-top: 30px;
+}
+.site-navigation {
+  margin-right: 30px;
 }
 
 .main-navigation li {
@@ -84,7 +86,7 @@ li{
   
 
 
-
+/* Основная */
 /* Слайдер */
 
 
@@ -362,16 +364,16 @@ li{
 .map-main {
   width: 1200px;
   margin: 0 auto;
-  padding: 53px 20px;
+  padding: 53px 0;
   background-image: url(../img/map-marker.png);
   background-repeat: no-repeat;
   background-position: 67.7% 39.5%;
 }
 .window {
   background-color: white;
-  padding: 40px 50px 0px 50px;
-  width: 320px;
-  height: 310px;
+  max-width: 320px;
+  padding: 50px 50px 50px 50px;
+
 }
 .window h4 {
   text-transform: uppercase;
@@ -387,4 +389,215 @@ li{
   border-radius: 3px;
   color: white;
   padding: 15px 43px 15px 43px;
+}
+
+
+/* Подвал */
+
+
+.footer-main {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+.social {
+ display: flex;
+ padding-right: 140px;
+ align-items: center;
+}
+
+.social a {
+  display: block;
+  padding: 40px 40px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+}
+
+.social li:nth-child(n+2) {
+  margin-left: 12px;
+}
+
+.social ,
+.sale {
+  margin: 70px 0;
+}
+.sale {
+  line-height: 10px;
+  letter-spacing: -0.5px;
+}
+.sale h2 {
+  font-size: 35px;
+}
+
+
+/* Каталог */ 
+.block-page-title {
+  background-color: #eeeeee;
+  min-width: 1200px;
+}
+.page-title {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.page-title h1 {
+  font-size: 48px;
+  padding: 67px 0 118px 0;
+  margin: 0;
+}
+.catalog-columns {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+
+
+/* Фильтр */
+
+
+
+
+
+
+
+.filters {
+  width: 260px;
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter-item legend {
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.range-filter {
+  margin-top: 55px;
+}
+
+.range-controls {
+  position: relative;
+  padding: 39px 20px 39px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  padding: 2px;
+  border: 8px solid white;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.range-controls .toggle-min {
+  left: 18px;
+}
+.range-controls .toggle-max {
+  left: 160px;
+}
+.price-controls {
+  font-size: 0;
+}
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.price-controls input {
+  width: 80px;
+  padding: 10px 10px;
+  margin-left: 10px;
+  margin-top: 16px;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+.max-price {
+  text-align: right;
+}
+
+/* Радио */
+.filter-item {
+  margin-top: 60px;
+}
+
+.filter-option {
+  margin-top: 25px;
+  padding-left: 35px;
+}
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: -31px;
+  top: 1px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 4px #b8b8b8;
+  border-radius: 50%;
+}
+.filter-input-radio:checked + label::before {
+  background-color: #b8b8b8;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 4px #b8b8b8;
+}
+
+.filter-input-checkbox + label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -35px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.35;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.filter-input-checkbox:checked + label::after {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-button {
+  margin-top: 60px;
+  padding: 15px 86px;
+  border-radius: 3px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  background-color: #eeeeee;
 }
