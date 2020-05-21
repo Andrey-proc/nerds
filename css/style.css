@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -266,20 +266,14 @@ li{
  }
 
  .statistics-list span {
-  position: relative;
   text-transform: uppercase;
   font-size: 40px;
   font-weight: bold;
  }
  .statistics-list sup {
    font-size: 25px;
-   position: absolute;
-   top: 21px;
-   left: 68px;
  }
- .statistics-list li:nth-child(3) sup {
-  left: 45px;
- }
+ 
 
  /* бренды */
 
@@ -621,9 +615,16 @@ li{
 .filter-button {
   margin-top: 60px;
   padding: 15px 86px;
-  border-radius: 3px;
-  font-weight: 600;
+  font-size: 500;
   border: none;
-  text-transform: uppercase;
+  color: #000000;
   background-color: #eeeeee;
+}
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+.filter-button:active {
+  background-color: #d5d5d5;
+  color: #a6a6a6;
+  box-shadow: inset 0 6px 0 -3px #bfbfbf;
 }
