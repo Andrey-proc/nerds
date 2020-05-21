@@ -67,13 +67,16 @@ li{
   font-weight: bold;
   margin-top: 30px;
 }
-.site-navigation {
-  margin-right: 30px;
-}
 
 .main-navigation li {
   display: inline-block;
   text-transform: uppercase;
+}
+
+.site-navigation {
+  margin-right: 30px;
+}
+.site-navigation li { 
   padding: 0 24px;
 }
 
@@ -474,6 +477,16 @@ li{
 }
 
 
+/* Основной блок каталог*/
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+}
+
+
 
 
 
@@ -628,3 +641,124 @@ li{
   color: #a6a6a6;
   box-shadow: inset 0 6px 0 -3px #bfbfbf;
 }
+
+
+
+/* Каталог товаров */
+
+.catalog {
+  margin-left: 100px;
+  margin-top: 65px;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catalog-item {
+  position: relative;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.catalog-item-price {
+  display: none;
+  position: absolute;
+  text-align: center;
+  padding: 16px 80px 46px; 
+  width: 100%;
+  background-color: #eeeeee;
+  bottom: 2px;
+  left: 0;
+}
+
+.catalog-item-price h3,
+.catalog-item-price a {
+  text-transform: uppercase;
+}
+.catalog-item-price p {
+ color: #8a8a8a;
+ margin-bottom: 5px;
+}
+
+.catalog-item__header {
+  display: flex;
+  padding: 8px 11px;
+  background-color: #e9e9e9;
+  border-radius: 3px 3px 0px 0px;
+}
+.catalog-item-image {
+  margin-top: -2px;
+
+}
+
+.dot {
+  display: block;
+  margin: 5px ;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+
+/* hover */
+
+.catalog-item-price h3:hover {
+  color: #fb565a;
+  cursor: pointer;
+}
+.catalog-item-price:active h3 {
+  color: #a6a6a6;
+}
+
+.catalog-item:hover .catalog-item__header {
+  background-color: #4d4d4d;
+}
+.catalog-item:hover .catalog-item-price {
+  display: block;
+}
+
+/* hover */
+
+.catalog-sort {
+   display: flex;
+   justify-content: space-between;
+   margin-left: 40px;
+   margin-bottom: 55px;
+   text-transform: uppercase;
+}
+
+.catalog-sort span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.catalig-list-sort {
+  position: relative;
+  display: flex;
+  align-self: flex-end;
+  margin-right: 90px;
+  font-size: 12px;
+}
+
+.catalig-list-sort li {
+  padding: 0px 10px;
+}
+.catalig-list-sort a {
+  color: #b2b2b2;
+}
+.catalig-list-sort a:hover {
+  color: #010101;
+}
+
+
+
+
+
+
+
+
+color: #fb565a;
+  color: #a6a6a6;
