@@ -179,19 +179,19 @@ li{
  }
 
  .list_services {
-  max-width: 1100px; 
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
  }
-
  .list_services h3,
  .list_services a {
    margin-top: 20px;
  }
- .list_services li {
-   max-width: 300px;
+ .servece-item {
+   width: 300px;
  }
+ .servece-item:nth-child(n+2) {
+  margin-left: 100px;
+ }
+ 
  .button-soft {
   background-color: #00ca74;
  }
