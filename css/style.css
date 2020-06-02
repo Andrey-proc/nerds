@@ -381,6 +381,7 @@ li{
 /* Карта */
 
 .map-main {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   padding: 53px 0;
@@ -783,5 +784,59 @@ li{
   color: #000000;
   background-color: #eeeeee;
  }
+
+ /* модальное окно */
+
+ .modal {
+   position: absolute;
+   background-color: white;
+
+
+ }
+ .modal p {
+   display: inline-block;
+
+ }
+
+ .modal-login {
+   margin: 0 auto;
+   padding: 70px 100px;
+   width: 960px;
+ }
+
+ .modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  
+  width: 22px;
+  height: 22px;
+
+  background-color: red;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+
+  width: 19px;
+  height: 3px;
+
+  background-color: #fecccd;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
 
 
